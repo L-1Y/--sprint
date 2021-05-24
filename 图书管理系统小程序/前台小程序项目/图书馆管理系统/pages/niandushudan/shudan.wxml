@@ -1,0 +1,18 @@
+<view>
+  <!-- 需用array进行添加项 -->
+  <view class="single_goods" wx:for="{{list}}"  wx:key="key1" >
+  <view  class="single_image_wrap" >
+        <image src="{{item.image}}" class="single_goods_image"></image>
+      </view>
+    <view class="single_goods_infor" >
+      <navigator url="../spdetail/spdetail?xuhao={{item.xuhao}}">
+        <view  class="single_goods_name">
+          <text>书名:{{item.bookname}}</text>
+        </view>
+        <view class="single_goods_introduction">
+        <text>类型：{{item.leixing}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

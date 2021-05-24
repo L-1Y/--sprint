@@ -1,0 +1,46 @@
+<view class="active_block">
+  <view class="active_item_title">
+    <view class="active_title_wrap">
+      <view class="active_title">好书分享</view>
+    </view>
+  </view>
+  <view wx:for="{{list}}" wx:key="key1">
+    <navigator url="../spdetail/spdetail?xuhao={{item.xuhao}}">
+
+
+      <!-- 
+      <view class="active_item">
+        <view>
+          <image bindload="cusImageLoad" src="{{item.image}}" style="width: {{imageWidth}};height: {{imageHeight}}" class="image1"></image>
+        </view>
+        <view class="active_goods_name">
+          标题:{{item.bookname}}
+        </view>
+        <view class="active_item_infor">
+          <text class="active_new_price">简介:{{item.content}}</text>
+        </view>
+      </view> -->
+
+
+      <view class="item1">
+        <view>
+          <image src="{{item.image}}" class="image1"> </image>
+        </view>
+        <view class="infor1">
+          <view class="title1">
+            书名:{{item.bookname}}
+          </view>
+          <view class="content1">
+            简介:{{item.content}}
+          </view>
+        </view>
+
+        
+
+      </view>
+
+
+
+    </navigator>
+  </view>
+</view>

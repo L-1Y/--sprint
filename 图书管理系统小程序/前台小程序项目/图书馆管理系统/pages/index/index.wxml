@@ -1,0 +1,65 @@
+<view>
+<!--滚动start-->
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--滚动end-->
+<!--菜单start-->
+<view class="category">
+  <view class="category_item" wx:for="{{iconArray}}">
+    <navigator url="{{item.tzUrl}}" >
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="{{item.iconUrl}}" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
+    </navigator>
+  </view>
+</view>
+<!--菜单end-->
+<view>
+  <view class="commen_title">
+    <text>猜你喜欢</text>
+  </view>
+
+  <view wx:if="true">
+  <view class="single_goods"  wx:for="{{list}}"  wx:key="key1" >
+    <view class="single_image_wrap">
+      <image src="{{item.image}}" class="single_goods_image"></image>
+    </view>
+      <view class="single_goods_infor" >
+      <navigator url="../spdetail/spdetail?xuhao={{item.xuhao}}">
+        <view  class="single_goods_name"> 
+          <text>{{item.bookname}}</text> <!--书名-->
+        </view>
+        <!-- <view  class="single_goods_address">
+          <text>总量:{{item.zongliang}}</text>
+        </view>
+        <view  class="single_goods_address">
+          <text>余量:{{item.yuliang}}</text>
+        </view> -->
+        <view class="single_goods_introduction">
+        <text>类型：{{item.leixing}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  </view>
+
+
+
+  <view wx:else="false">
+  <!-- 获取number和fyzy后，按照fyzy进行个推 -->
+  
+  </view>
+
+</view>
