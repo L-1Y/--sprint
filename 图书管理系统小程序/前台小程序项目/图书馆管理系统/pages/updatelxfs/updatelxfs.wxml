@@ -1,0 +1,18 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <form bindsubmit="update">
+    <view class="page__bd">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell ">
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="{{phone}}" focus="{{inputShowed}}" name="input1"/>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="weui-form__opr-area">
+        <button form-type="submit" class="submit_style">提交</button>
+      </view>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,27 @@
+.image-style{
+padding: 10%;
+width: 100px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.image-box{
+    width: 100px;
+    height:1 00px;
+     position: absolute;
+    left: 50%;
+    top: 30%;
+    margin: -50px 0 0 -50px;
+}
+.image-box1{
+    width: 100px;
+    height:1 00px;
+     position: absolute;
+    left: 50%;
+    top: 70%;
+    margin: -50px 0 0 -50px;
+}
+.span1{
+  text-align: center;
+}

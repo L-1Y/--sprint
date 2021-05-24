@@ -1,0 +1,40 @@
+<block wx:if="{{denglu==true}}">
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">学号</view>
+        <view class="weui-cell__ft">{{number}}</view>
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">姓名</view>
+        <view class="weui-cell__ft">{{name}}</view>
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">专业</view>
+        <view class="weui-cell__ft">{{fyzy}}</view>
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="../updatelxfs/updatelxfs" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd"> 联系方式</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">{{phone}}</view>
+      </navigator>
+    </view>
+
+
+  </view>
+</view>
+</block>
+<block wx:else>
+   <view class="unlogin">
+   <text>你尚未登录</text>
+   </view>
+</block>

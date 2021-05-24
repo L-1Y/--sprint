@@ -1,0 +1,23 @@
+.input_style{
+  width: 60%;
+  background-color: #f8f8f8;
+  margin-left: 5%;
+  border: 1px solid #dbdbdb;
+}
+.button_style{
+  width: 40%;
+}
+.tj_style{
+  text-align: center;
+}
+.unlogin {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 37%;
+  top: 50%;
+  margin: -50px 0 0 -50px;
+}

@@ -1,0 +1,42 @@
+<view class="page">
+  <form bindsubmit="popConfirm">
+    <view class="weui-form">
+      <view class="weui-form__text-area">
+        <view class="weui-form__title">请输入你的信息</view>
+      </view>
+
+
+      <view class="input_style ">
+        <view class="weui-cells__group weui-cells__group_form ">
+          <view class="weui-cells weui-cells_form " wx:for="{{inputarray}}">
+            <view class="weui-cell">
+              <view class="weui-cell__hd">
+                <label class="weui-label">{{item.inputtext1}}</label>
+              </view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" type="number" pattern="[0-9]*" placeholder="{{item.inputtext2}}" name="{{item.inputname}}" />
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells__title">选择专业</view>
+      <view class="weui-cells weui-cells_after-title zy_style">
+        <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__bd">
+            <picker bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}" name="select1">
+              <view class="weui-select" name="select2">{{accounts[accountIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+
+
+      <view class="weui-form__opr-area">
+        <button form-type="submit" class="submit_style">提交</button>
+      </view>
+    </view>
+  </form>
+</view>

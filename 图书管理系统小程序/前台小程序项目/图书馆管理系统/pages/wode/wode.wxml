@@ -1,0 +1,23 @@
+<view class="personal_info">
+	<view class="photo_wrap">
+		<image src="image/index1.png" class="photo"></image>
+	</view>
+	<view class="nickname">
+		{{userInfo.nickName}}
+	</view>
+</view>
+<view class="wode_item_wrap">
+	<view class="wode_item" wx:for="{{iArray}}">
+    <navigator url="{{item.tzUrl}}">
+		{{item.iconText}}
+		<span class="arrow_wrap"></span>
+    </navigator>
+	</view>
+</view>
+
+
+<view class="wode_out" wx:if="{{denglu==true}}">
+<button bindtap="logout">退出</button>
+</view>
+<view wx:else>
+</view>

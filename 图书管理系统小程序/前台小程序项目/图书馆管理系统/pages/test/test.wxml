@@ -1,0 +1,19 @@
+<!--扫一扫功能-->
+  <view class="image-box">
+    <view bindtap="scancode" >
+    <image src="../../image/jie1.png" class="image-style"></image>
+    </view>
+    <view class="span1">
+    <span>借阅图书</span>
+    </view>
+  </view>
+
+  <view class="image-box1">
+    <view bindtap="scancode1" >
+    <image  src="../../image/huan1.png" class="image-style"></image>
+    </view>
+    <view class="span1">
+    <span>归还图书</span>
+    </view>
+  </view>
+

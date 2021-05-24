@@ -1,0 +1,12 @@
+.submit_style{
+  width: 50%;
+  color:white;
+  background-color: #69C3AA;
+}
+
+.zy_style{
+  margin: 0  0 40px 0;
+}
+.input_style{
+  margin:50px 0 10px 0;
+}

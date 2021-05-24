@@ -1,0 +1,65 @@
+ <!--展示书籍的具体内容页面-->
+<block wx:if="{{denglu==false}}">
+<view class="goods_infor_top"  wx:for="{{list}}"  wx:key="key1" >
+  <view>
+    <image src="{{item.image}}" class="slide-image" />
+  </view>
+  <view class="goods_title"  >
+     <view class="bookname">
+           {{item.bookname}}          <!--显示书名-->
+     </view>
+     <view class="yuliang">
+     余量：{{item.yuliang}}
+     </view>
+   </view>
+</view>
+<view class="goods_infor_pre"  wx:for="{{list}}"  wx:key="key1">
+  <view class="goods_infor_txt">
+    <view class="goods_infor_brand">
+    <text class="text1">书籍类型：</text>
+    <text>{{item.leixing}}</text>   <!--显示书的类型-->
+    </view>   
+    <text class="text1">介绍：</text>
+    <text>{{item.content}}</text>   <!--显示书的具体内容-->
+  </view>
+</view>
+</block>
+
+<block wx:else>
+<view class="goods_infor_top"  wx:for="{{list}}"  wx:key="key1" >
+  <view>
+    <image src="{{item.image}}" class="slide-image" />
+  </view>
+  <view class="goods_title"  >
+     <view class="bookname">
+           {{item.bookname}}          <!--显示书名-->
+     </view>
+     <view class="yuliang">
+     余量：{{item.yuliang}}
+     </view>
+     <view class="goods_collect_btn" bindtap="collect">
+      <view wx:if="{{iscollect!=item.flag}}">
+        <image src="../../image/icon-aixin.png" class="goods_collect_img"></image>
+      </view>
+      <view wx:else>
+        <image src="../../image/icon-aixin1.png" class="goods_collect_img"></image>
+      </view> 
+      <text wx:if="{{iscollect!=item.flag}}">已收藏</text>
+      <text wx:else>收藏</text>
+    </view>
+   </view>
+</view>
+<view class="goods_infor_pre"  wx:for="{{list}}"  wx:key="key1">
+  <view class="goods_infor_txt">
+    <view class="goods_infor_brand">
+    <text class="text1">书籍类型：</text>
+    <text>{{item.leixing}}</text>   <!--显示书的类型-->
+    </view>   
+    <text class="text1">介绍：</text>
+    <text>{{item.content}}</text>   <!--显示书的具体内容-->
+  </view>
+</view>
+</block>
+
+
+

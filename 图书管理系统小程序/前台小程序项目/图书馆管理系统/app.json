@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/faxian/faxian",
+    "pages/xiaoxi/xiaoxi",
+    "pages/wode/wode",
+    "pages/spdetail/spdetail",
+    "pages/pay/pay",
+    "pages/test/test",
+    "pages/all/all",
+    "pages/computer/computer",
+    "pages/math/math",
+    "pages/chinese/chinese",
+    "pages/foreign/foreign",
+    "pages/care/care",
+    "pages/pe/pe",
+    "pages/economy/economy",
+    "pages/shouchang/shouchang",
+    "pages/jscondaction/jscondaction",
+    "pages/myinfo/myinfo",
+    "pages/aboutus/aboutus",
+    "pages/lxkf/lxkf",
+    "pages/scanresult/scanresult",
+    "pages/ceshi/ceshi",
+    "pages/updatelxfs/updatelxfs",
+    "pages/huan/huan",
+    "pages/niandushudan/shudan"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "演示",
+    "navigationBarBackgroundColor": "#69c3aa",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#69C3AA",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/shouye1.png",
+        "selectedIconPath": "image/shouye.png"
+      },
+      {
+        "pagePath": "pages/faxian/faxian",
+        "text": "好书分享",
+        "iconPath": "image/huodong1.png",
+        "selectedIconPath": "image/huodong.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "扫一扫",
+        "iconPath": "image/sao1.png",
+        "selectedIconPath": "image/sao.png"
+      },
+      {
+        "pagePath": "pages/xiaoxi/xiaoxi",
+        "text": "借阅查询",
+        "iconPath": "image/car1.png",
+        "selectedIconPath": "image/car.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "image/wode1.png",
+        "selectedIconPath": "image/wode.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

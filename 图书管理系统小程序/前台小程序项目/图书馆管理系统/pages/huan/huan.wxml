@@ -1,0 +1,32 @@
+<view wx:for="{{list}}" wx:key="key1">
+  <view class="single_goods">
+    <view class="single_image_wrap">
+      <image src="../../image/book/1.jpg" class="single_goods_image"></image>
+    </view>
+      <view class="single_goods_infor" >
+      <navigator url="../spdetail/spdetail?xuhao={{xuhao}}">
+        <view  class="single_goods_name"> 
+          <text>{{item.bookname}}</text> <!--书名-->
+        </view>
+        <view class="single_goods_introduction">
+        <text>类型：{{item.leixing}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="pay_order_wrap">
+    <view class="table_header">
+      <span class="table_goods_name1">归还信息</span>
+    </view>
+    <view class="table_content">
+      <view class="table_content_item">
+        <span class="table_goods_name">借阅人：{{name}}</span>
+        <span class="table_goods_name">借阅书籍：{{item.bookname}}</span>
+        <span class="table_goods_name">归还时间：{{time}}</span>
+      </view>
+    </view>
+    <form bindsubmit="login">
+      <button form-type="submit" class="submit_style">确认归还</button>
+    </form>
+  </view>
+</view>
