@@ -1,0 +1,31 @@
+//二维码借书功能-----插入数据表book中
+    public void insertbook(String xuhao) {
+        Connection conn = null;
+        Statement stmt = null;
+        ArrayList<GoodBook> rst = new ArrayList<GoodBook>();
+        try {
+            Class.forName(JDBC_DRIVER);
+            System.out.println("连接数据库......");
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            stmt = conn.createStatement();
+            StringBuffer sql = new StringBuffer("insert into book(xuhao) values(" + xuhao + ")");
+            ResultSet rs = stmt.executeQuery(sql.toString());
+            rs.close();
+            stmt.close();
+            conn.close();
+            System.out.println("连接数据库成功......");
+        } catch (SQLException se) {
+            se.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null) stmt.close();
+            } catch (SQLException se2) {
+            }
+            try {
+                if (conn != null) conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }
+        }
+        return;
+    }
